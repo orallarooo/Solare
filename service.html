@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="css/libs/normalize.css">
+    <link rel="stylesheet" href="css/libs/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/libs/fancybox.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <header id="header" class="header">
+        <div class="container">
+            <div class="header-inner">
+                <a class="logo" href="#">
+                    <img src="img/logo.svg" alt="">
+                </a>
+                <button class="btn nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Открыть меню
+                </button>
+                <button class="btn nav-toggle mobile">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Открыть меню
+                </button>
+                <div class="header-right">
+                    <div class="header-right-inner">
+                        <div class="header-lang">
+                            <span class="active">Ru</span>
+                            /
+                            <a href="#en">En</a>
+                        </div>
+                        <div class="header-phone">
+                            <div class="header-phone-current">
+                                <a href="tel:+79991234567">
+                                    <span>Россия</span>
+                                    <span>+7 999 123 45 67</span>
+                                </a>
+                                <button id="phone-toggle" class="btn header-phone-toggle">
+                                    <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_1_8429)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.88027 0.289531L6.00027 4.16953L2.12027 0.28953C1.73027 -0.100469 1.10027 -0.10047 0.710273 0.28953C0.320273 0.67953 0.320273 1.30953 0.710273 1.69953L5.30027 6.28953C5.69027 6.67953 6.32027 6.67953 6.71027 6.28953L11.3003 1.69953C11.6903 1.30953 11.6903 0.679531 11.3003 0.289531C10.9103 -0.0904689 10.2703 -0.100469 9.88027 0.289531Z" fill="#4CB4FF"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_1_8429">
+                                        <rect width="12" height="7" fill="white" transform="translate(12 7) rotate(-180)"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>                                    
+                                </button>
+                            </div>
+                            <ul class="header-phone-list">
+                                <li class="current">
+                                    <span>Россия</span>
+                                    <span>+7 999 123 45 67</span>
+                                </li>
+                                <li>
+                                    <span>ОАЭ</span>
+                                    <span>+971-4 12 345 67</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a class="header-phone-current-mobile" href="tel:+79991234567">+7 999 123 45 67</a>
+                </div>
+            </div>
+            <nav class="header-nav">
+                <ul class="header-nav-top">
+                    <li data-children="li_item-1">
+                        <div>
+                            <i style="background-image: url(img/menu/menu-icon-1.png);"></i>
+                            <a href="#">Регистрация  Компаний</a>
+                        </div>
+                        <button class="btn submenu-toggle">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </li>
+                    <li data-children="li_item-2">
+                        <div>
+                            <i style="background-image: url(img/menu/menu-icon-2.png);"></i>
+                            <a href="#">Дополнителные услуги</a>
+                        </div>
+                        <button class="btn submenu-toggle">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </li>
+                </ul>
+                <ul class="header-nav-submenu" data-parent="li_item-1">
+                    <li>
+                        <a href="#">
+                            <i style="background-image: url(img/menu/submenu-icon-1.png);"></i>
+                            <span>Офшор</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i style="background-image: url(img/menu/submenu-icon-2.png);"></i>
+                            <span>СЭЗ</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i style="background-image: url(img/menu/submenu-icon-3.png);"></i>
+                            <span>Мейнленд</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="header-nav-submenu" data-parent="li_item-2">
+                    <li>
+                        <a href="#">
+                            <i style="background-image: url(img/menu/submenu-icon-1.png);"></i>
+                            <span>Меню 1</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i style="background-image: url(img/menu/submenu-icon-2.png);"></i>
+                            <span>Меню 2</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i style="background-image: url(img/menu/submenu-icon-3.png);"></i>
+                            <span>Меню 3</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <nav class="mobile-nav">
+            <div class="lang">
+                <span class="active">Ru</span>
+                /
+                <a href="#en">En</a>
+            </div>
+            <ul>
+                <li class="menu-item-has-children">
+                    <div>
+                        <a href="tel:+79991234567">
+                            Россия +7 999 123 45 67
+                        </a>
+                        <span></span>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="tel:+97141234567">
+                                ОАЭ +971-4 12 345 67
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item-has-children">
+                    <div>
+                        <i style="background-image: url(img/menu/menu-icon-1.png);"></i>
+                        <a href="#">
+                            Регистрация  Компаний
+                        </a>
+                        <span></span>
+                    </div>
+                    <ul>
+                        <li>
+                            <div>
+                                <i style="background-image: url(img/menu/submenu-icon-1.png);"></i>
+                                <a href="#">
+                                    Регистрация  Компаний
+                                </a>
+                                <span></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <i style="background-image: url(img/menu/submenu-icon-2.png);"></i>
+                                <a href="#">
+                                    СЭЗ
+                                </a>
+                                <span></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <i style="background-image: url(img/menu/submenu-icon-3.png);"></i>
+                                <a href="#">
+                                    Офшор
+                                </a>
+                                <span></span>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item-has-children">
+                    <div>
+                        <i style="background-image: url(img/menu/menu-icon-2.png);"></i>
+                        <a href="#">
+                            Дополнителные услуги
+                        </a>
+                        <span></span>
+                    </div>
+                    <ul>
+                        <li>
+                            <div>
+                                <i style="background-image: url(img/menu/submenu-icon-1.png);"></i>
+                                <a href="#">
+                                    Доп. услуга 1
+                                </a>
+                                <span></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <i style="background-image: url(img/menu/submenu-icon-2.png);"></i>
+                                <a href="#">
+                                    Доп. услуга 2
+                                </a>
+                                <span></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <i style="background-image: url(img/menu/submenu-icon-3.png);"></i>
+                                <a href="#">
+                                    Доп. услуга 3
+                                </a>
+                                <span></span>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main id="content" class="content">
+        <div class="service">
+            <section class="page-header">
+                <div class="container">
+                    <div class="page-header-inner">
+                        <h1>
+                            Мейнленд
+                        </h1>
+                    </div>
+                </div>
+            </section>
+            <div class="service-content">
+                <div class="container">
+                    <h2>Бизнес в Дубае для гражданина России с нуля</h2>
+                    <p>
+                        Бизнес в Дубае для гражданина России с нуля вполне возможно организовать: Объединенные Арабские Эмираты целенаправленно создают лояльные условия создания компании, в том числе со 100% участием иностранного гражданина. Дубай имеет признанный статус «столицы инвестиций» и на 2021 год находился на первой строчке мирового рейтинга городов с наибольшим объемом вложений в стартап-компании. Бизнес в Дубае для иностранного гражданина с нуля свободно регистрируется без личного присутствия – для граждан, имеющих отметку о пересечении границы с ОАЭ. Страна привлекает бизнесменов простотой и лояльностью налоговой системы – юридические лица либо платят НДС, либо вообще освобождаются от его уплаты, в зависимости от юрисдикции. Компании не являются объектами постоянных проверок и инспекций со стороны регулирующих органов, надзор за деятельностью возлагается на банк, где юридическое лицо имеет счет. Банковская проверка проводится периодически, единственное, чего она касается – правомерность платежей в адрес контрагентов, так как в ряде случаев (например, на территории free zone) для организаций действует запрет на сотрудничество с юридическими лицами ОАЭ вне собственной юрисдикции. Особые органы осуществляют контроль лишь за предприятиями общественного питания, салонами красоты, образовательными учреждениями, поставщиками контента и представителями других отдельных сфер. Помимо прочего, открытие компании автоматически дает право получить вид на жительство Эмираты для россиян в формате трехлетней визы с возможностью продления.
+                    </p>
+                    <h2>Офшор или оншор</h2>
+                    <p>В Объединенных Арабских Эмиратах существует несколько видов организационно-правовых форм юридических лиц, среди которых принципиально выделяются два формата: офшорные и оншорные компании. </p>
+                    <p>
+                        Офшорные юридические лица выполняют функцию анонимного владения активами и управления ими. Оншорные в свою очередь делятся на два типа: деятельность на материковой территории ОАЭ (mainland) и в свободных экономических зонах. Свободные зоны (free zone, СЭЗ) – это обособленные районы, которые есть в каждом эмирате. Они предназначаются специально для ведения бизнеса, некоторые СЭЗ размещают на своей территории исключительно компании определенного профиля – например, ритейлеров. Регистрация в свободной зоне проще, чем на материке.
+                    </p>
+                    <img src="img/post-image.jpg" alt="">
+                    <h2>Бизнес в Дубае для гражданина России с нуля</h2>
+                    <p>
+                        Бизнес в Дубае для гражданина России с нуля вполне возможно организовать: Объединенные Арабские Эмираты целенаправленно создают лояльные условия создания компании, в том числе со 100% участием иностранного гражданина. Дубай имеет признанный статус «столицы инвестиций» и на 2021 год находился на первой строчке мирового рейтинга городов с наибольшим объемом вложений в стартап-компании. Бизнес в Дубае для иностранного гражданина с нуля свободно регистрируется без личного присутствия – для граждан, имеющих отметку о пересечении границы с ОАЭ. Страна привлекает бизнесменов простотой и лояльностью налоговой системы – юридические лица либо платят НДС, либо вообще освобождаются от его уплаты, в зависимости от юрисдикции. Компании не являются объектами постоянных проверок и инспекций со стороны регулирующих органов, надзор за деятельностью возлагается на банк, где юридическое лицо имеет счет. Банковская проверка проводится периодически, единственное, чего она касается – правомерность платежей в адрес контрагентов, так как в ряде случаев (например, на территории free zone) для организаций действует запрет на сотрудничество с юридическими лицами ОАЭ вне собственной юрисдикции. Особые органы осуществляют контроль лишь за предприятиями общественного питания, салонами красоты, образовательными учреждениями, поставщиками контента и представителями других отдельных сфер. Помимо прочего, открытие компании автоматически дает право получить вид на жительство Эмираты для россиян в формате трехлетней визы с возможностью продления.
+                    </p>
+                    <h2>Бизнес в Дубае для гражданина России с нуля</h2>
+                    <p>
+                        Бизнес в Дубае для гражданина России с нуля вполне возможно организовать: Объединенные Арабские Эмираты целенаправленно создают лояльные условия создания компании, в том числе со 100% участием иностранного гражданина. Дубай имеет признанный статус «столицы инвестиций» и на 2021 год находился на первой строчке мирового рейтинга городов с наибольшим объемом вложений в стартап-компании. Бизнес в Дубае для иностранного гражданина с нуля свободно регистрируется без личного присутствия – для граждан, имеющих отметку о пересечении границы с ОАЭ. Страна привлекает бизнесменов простотой и лояльностью налоговой системы – юридические лица либо платят НДС, либо вообще освобождаются от его уплаты, в зависимости от юрисдикции. Компании не являются объектами постоянных проверок и инспекций со стороны регулирующих органов, надзор за деятельностью возлагается на банк, где юридическое лицо имеет счет. Банковская проверка проводится периодически, единственное, чего она касается – правомерность платежей в адрес контрагентов, так как в ряде случаев (например, на территории free zone) для организаций действует запрет на сотрудничество с юридическими лицами ОАЭ вне собственной юрисдикции. Особые органы осуществляют контроль лишь за предприятиями общественного питания, салонами красоты, образовательными учреждениями, поставщиками контента и представителями других отдельных сфер. Помимо прочего, открытие компании автоматически дает право получить вид на жительство Эмираты для россиян в формате трехлетней визы с возможностью продления.
+                    </p>
+                </div>    
+                <section class="info">
+                    <div class="container">
+                        <h2 class="section-title">
+                            Офшор или оншор
+                        </h2>
+                        <div class="info-row">
+                            <div class="info-col">
+                                <div class="info-description">
+                                    <p>
+                                        В Объединенных Арабских Эмиратах существует несколько видов организационно-правовых форм юридических лиц, среди которых принципиально выделяются два формата: офшорные и оншорные компании. 
+                                    </p>
+                                    <p>
+                                        Офшорные юридические лица выполняют функцию анонимного владения активами и управления ими. Оншорные в свою очередь делятся на два типа: деятельность на материковой территории ОАЭ (mainland) и в свободных экономических зонах. Свободные зоны (free zone, СЭЗ) – это обособленные районы, которые есть в каждом эмирате. Они предназначаются специально для ведения бизнеса, некоторые СЭЗ размещают на своей территории исключительно компании определенного профиля – например, ритейлеров. Регистрация в свободной зоне проще, чем на материке.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="info-col">
+                                <div class="info-thumb">
+                                    <h4 class="info-thumb-title">Оформление лицензий на деятельность</h4>
+                                    <img src="img/info-block-1.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>            
+            </div>
+        </div>
+    </main>
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-col">
+                    <a href="#" class="footer-logo">
+                        <img src="img/logo-white.svg" alt="">
+                    </a>
+                    <div class="footer-description">
+                        <p>
+                            Специалисты в области лицензирования деятельности по обращению с отходами в части: транспортирования, обработки, утилизации, обезвреживания, размещения, сбора отходов I-IV классов опасности. Проведение мероприятий по подготовке предприятия-соискателя к лицензированию: оснащение производственной площадки, поставка оборудования, обучение сотрудников и иные сопутствующие процессы. 
+                        </p>
+                        <p>
+                            Организация и проведение государственной экологической экспертизы проектной документации на технологию по обезвреживанию отходов, а также объектов по их размещению. 
+                        </p>
+                        <p>
+                            В Москве и регионах России.
+                        </p>
+                    </div>
+                    <a href="#" class="footer-link">
+                        Контакты
+                    </a>
+                </div>
+                <div class="footer-col">
+                    <form id="footer-form" class="footer-form" method="post">
+                        <div class="footer-form-header">
+                            <span class="footer-form-title">Оставить заявку</span>
+                            <span class="footer-form-subtitle">И получите консультацию специолиста</span>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Ваше имя">
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="phone" placeholder="Телефон">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Email">    
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Сообщение"></textarea>
+                        </div>
+                        <button class="btn">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <ul>
+                    <li><a href="#">Карта сайта</a></li>
+                    <li><a href="#">Copyright © 2022 «SOLARE»</a></li>
+                    <li><a href="#">Политика конфиденциальности</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div id="enroll" class="modal enroll-modal">
+        <div class="modal-inner">
+            <button class="btn modal-close modal-close-style">Закрыть модальное окно</button>
+            <div class="enroll-content">
+                <h2 class="enroll-title">Оставить заявку</h2>
+                <form id="enroll-form" class="enroll-form" method="post">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Ваше имя*" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" name="phone" placeholder="Телефон*" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Сообщение"></textarea>
+                    </div>
+                    <button class="btn form-submit solare-btn solare-btn-blue">Отправить</button>
+                    <span class="form-notice">
+                        * обязательные для заполнения
+                    </span>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="success" class="modal success-modal">
+        <div class="modal-inner">
+            <h2 class="success-title">Заявка отправлено !</h2>
+            <p>
+                Спасибо за обращение, с вами свяжется специалист  в ближайшее время.
+            </p>
+            <button class="btn modal-close solare-btn solare-btn-blue">Закрыть</button>
+        </div>
+    </div>
+    <script src="js/libs/jquery.min.js"></script>
+    <script src="js/libs/swiper-bundle.min.js"></script>
+    <script src="js/libs/fancybox.umd.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+</html>
